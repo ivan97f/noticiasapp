@@ -14,7 +14,7 @@ export class Tab1Page {
   noticias: Article[] = [];
   
   ngOnInit(){
-    this.noticiasService.getTopHeadLine()
+    this.noticiasService.getTopHeadline()
     .subscribe( resp => {
       console.log('noticias', resp);
       this.noticias.push( ...resp.articles );
